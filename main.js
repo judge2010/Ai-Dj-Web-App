@@ -35,4 +35,6 @@ right_wrist_y=results[0].pose.rightWrist.y;
 function Play_m(){
 
     song.play();
+    song.setVolume(0.2);
+    song.rate(1);
 };
