@@ -1,0 +1,42 @@
+body{
+background-image: url("background.jpg");
+background-size: cover;
+}
+#main{
+    width: 100%;
+    box-shadow: 5px 5px 700px darkred;
+}
+.div_speed{
+    float: left;
+}
+.div_volume{
+    float: right;
+}
+#disk1{
+    height: 220px;
+    width: 220px;
+    border-radius: 100px;
+}
+#disk2{
+    height: 220px;
+    width: 220px;
+    border-radius: 100px;
+}
+#speed{
+    font-size: 30px;
+}
+#volume{
+    font-size: 30px;
+}
+#play{
+    font-size: 30px;
+    width: 200px;
+    margin-top: 20px;
+}
+canvas{
+    border-radius: 50px;
+    border-color: white;
+    border-width: 7px;
+    border-style: solid;
+    box-shadow:  2px 4px 80px white;
+}
