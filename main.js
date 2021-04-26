@@ -11,6 +11,15 @@ function preload(){
 
 function draw(){
 image(video ,0 ,0 ,500 ,450 );
+fill("#d60909");
+stroke("#d60909");
+circle(left_wrist_x,left_wrist_y,20);
+var number_leftWristY=Number(left_wrist_y);
+var removeDecimal=floor(number_leftWristY*2);
+volume=removeDecimal/1000;
+console.log(volume);
+document.getElementById("volume").innerHTML = "Volume =  " + volume;
+song.setVolume(volume);
 };
 function setup(){
 Canvas=createCanvas(500 ,450);
@@ -37,4 +46,5 @@ function Play_m(){
     song.play();
     song.setVolume(0.2);
     song.rate(1);
+
 };
